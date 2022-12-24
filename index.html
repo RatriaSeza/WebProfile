@@ -1,65 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Satria's Resume</title>
-    
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> <!--Title icon -->
-    <link rel="stylesheet" href="css/style.css">  <!-- CSS Style -->
-</head>
-<body>
-    <div id="header" class="sticky">
-        <nav>
-            <p>Portofolio</p>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Satria's Resume</title>
 
-    <div id="home">
-        <img src="img/lazy.png">
-        <p>SATRIA REZA RAMADHAN</p>
-    </div>
-    
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<!--Title icon -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- CSS Style -->
+		<script src="script/script.js"></script>
+		<!-- Script-->
+	</head>
+	<body>
+		<div id="header" class="sticky">
+			<nav>
+				<p class="hero">Portofolio</p>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
 
-    <div id="about">
-        <img src="img/person.png">
-        <h1>About Me</h1>
-        <p> I am ambitious and creative person, and easily 
-            adapt to new environment. I'd like to sport, 
-            music and lazy. I have interest in Web 
-            Development and this is my First Website that
-            Created with full of my heart. Thank You :)</p>
-    </div>
+		<div id="home">
+			<img src="img/lazy.png" alt="lazy" />
+			<p>SATRIA REZA RAMADHAN</p>
+		</div>
 
-    <div id="education">
-        <h2>Education</h2>
-        <p>I'm Informatics Student at Diponegoro University</p>
-        <img src="img/informatika.jpeg">
-    </div>
-    
-    <div id="exporg">
-        <h2>Experience <span>& Organization</span></h2>
-        <div id="imj">
-            <h4>2022 - IMJ Semarang</h4>
-            <h5>Vice Leader</h5>
-            <p>I met people that came from my home town Jambi. 
-                We help each other and make lot of fun.</p>
-        </div>
+		<div id="about">
+			<img src="img/person.png" alt="People" />
+			<h1>About Me</h1>
+			<p>
+				I am ambitious and creative person, and easily adapt to new environment.
+				I'd like to sport, music and lazy. I have interest in Web Development
+				and this is my First Website that Created with full of my heart. Thank
+				You :)
+			</p>
+		</div>
 
-        <div id="hmif">
-            <h4>2022 - HMIF Diponegoro University</h4>
-            <h5>Staff</h5>
-            <p>I have lot of nice times at this organization. This 
-                where i can have new friends and teach my leadship and teamwork skills.</p>
-        </div>
-    </div>
+		<div id="education">
+			<h2>Education</h2>
+			<p>I'm Informatics Student at Diponegoro University</p>
+			<img src="img/informatika.jpeg" alt="Informatics" />
+		</div>
 
+		<div id="exporg">
+			<h2>Experience <span>& Organization</span></h2>
+			<div id="imj">
+				<h4>2022 - IMJ Semarang</h4>
+				<h5>Vice Leader</h5>
+				<p>
+					I met people that came from my home town Jambi. We help each other and
+					make lot of fun.
+				</p>
+			</div>
 
-</body>
+			<div id="hmif">
+				<h4>2022 - HMIF Diponegoro University</h4>
+				<h5>Staff</h5>
+				<p>
+					I have lot of nice times at this organization. This where i can have
+					new friends and teach my leadship and teamwork skills.
+				</p>
+			</div>
+		</div>
+
+		<div id="contact"></div>
+
+		<!-- Jquery -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+		<script>
+			$(window).scroll(function () {
+				if ($(window).scrollTop() > 100) {
+					$(".hero").addClass("blur");
+				} else {
+					$(".hero").removeClass("blur");
+				}
+			});
+		</script>
+	</body>
 </html>
