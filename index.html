@@ -6,17 +6,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Satria's Resume</title>
 
-		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 		<!--Title icon -->
-		<link rel="stylesheet" href="css/style.css" />
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
 		<!-- CSS Style -->
-		<script src="script/script.js"></script>
-		<!-- Script-->
+		<link rel="stylesheet" href="css/style.css" />
+		
 	</head>
 	<body>
 		<div id="header" class="sticky">
-			<nav>
-				<p class="hero">Portofolio</p>
+			
+			<nav class="hero">
+				<div>
+					<p id="logo">Portofolio</p>
+				</div>
 				<ul>
 					<li><a href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
@@ -25,20 +28,22 @@
 			</nav>
 		</div>
 
-		<div id="home">
+		<div id="home" class="container">
 			<img src="img/lazy.png" alt="lazy" />
-			<p>SATRIA REZA RAMADHAN</p>
+			<p>SATRIA REZA <br> RAMADHAN</p>
 		</div>
 
-		<div id="about">
+		<div id="about" class="container">
 			<img src="img/person.png" alt="People" />
-			<h1>About Me</h1>
-			<p>
-				I am ambitious and creative person, and easily adapt to new environment.
-				I'd like to sport, music and lazy. I have interest in Web Development
-				and this is my First Website that Created with full of my heart. Thank
-				You :)
-			</p>
+			<div class="text">
+				<h1>About Me</h1>
+				<p>
+					I am ambitious and creative person, and easily adapt to new environment.
+					I'd like to sport, music and lazy. I have interest in Web Development
+					and this is my First Website that Created with full of my heart. Thank
+					You :)
+				</p>
+			</div>
 		</div>
 
 		<div id="education">
@@ -68,21 +73,14 @@
 			</div>
 		</div>
 
-		<div id="contact"></div>
+		<div id="contact">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit aliquid architecto nobis, sequi atque impedit ratione veniam ipsam consectetur, est ab ad quibusdam voluptatem delectus accusamus mollitia consequatur aspernatur provident.
+		</div>
 
 		<!-- Jquery -->
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-		<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
 
-		<script>
-			$(window).scroll(function () {
-				if ($(window).scrollTop() > 100) {
-					$(".hero").addClass("blur");
-				} else {
-					$(".hero").removeClass("blur");
-				}
-			});
-		</script>
+		<script src="script/script.js"></script>
+		<!-- Script-->
 	</body>
 </html>
