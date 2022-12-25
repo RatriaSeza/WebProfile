@@ -11,19 +11,21 @@
 
 		<!-- CSS Style -->
 		<link rel="stylesheet" href="css/style.css" />
+
+		<!-- Icons -->
+		<script src="https://kit.fontawesome.com/15d5872470.js" crossorigin="anonymous"></script>
 		
 	</head>
 	<body>
 		<div id="header" class="sticky">
-			
 			<nav class="hero">
 				<div>
 					<p id="logo">Portofolio</p>
 				</div>
 				<ul>
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="#home" id="link-home">Home</a></li>
+					<li><a href="#about" id="link-about">About</a></li>
+					<li><a href="#contact" id="link-contact">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -36,7 +38,7 @@
 		<div id="about" class="container">
 			<img src="img/person.png" alt="People" />
 			<div class="text">
-				<h1>About Me</h1>
+				<h1>About <span class="green">Me</span></h1>
 				<p>
 					I am ambitious and creative person, and easily adapt to new environment.
 					I'd like to sport, music and lazy. I have interest in Web Development
@@ -47,34 +49,75 @@
 		</div>
 
 		<div id="education">
-			<h2>Education</h2>
-			<p>I'm Informatics Student at Diponegoro University</p>
+			<div>
+				<h2>Education</h2>
+				<p>I'm Informatics Student  <br>at Diponegoro University</p>
+			</div>
 			<img src="img/informatika.jpeg" alt="Informatics" />
 		</div>
 
 		<div id="exporg">
-			<h2>Experience <span>& Organization</span></h2>
-			<div id="imj">
-				<h4>2022 - IMJ Semarang</h4>
-				<h5>Vice Leader</h5>
-				<p>
-					I met people that came from my home town Jambi. We help each other and
-					make lot of fun.
-				</p>
-			</div>
-
-			<div id="hmif">
-				<h4>2022 - HMIF Diponegoro University</h4>
-				<h5>Staff</h5>
-				<p>
-					I have lot of nice times at this organization. This where i can have
-					new friends and teach my leadship and teamwork skills.
-				</p>
+			<h2>Experience <span class="yellow">& Organization</span></h2>
+			<div class="right">
+				<hr>
+				<div id="imj">
+					<h4>2022 - <span class="yellow">IMJ Semarang</span></h4>
+					<h5>Vice Leader</h5>
+					<p>
+						I met people that came from my home town Jambi. We help each other and
+						make lot of fun.
+					</p>
+				</div>
+				<br><br>
+				<hr>
+				<div id="hmif">
+					<h4>2022 - <span class="yellow">HMIF Diponegoro University</span></h4>
+					<h5>Staff</h5>
+					<p>
+						I have lot of nice times at this organization. This where i can have
+						new friends and teach my leadship and teamwork skills.
+					</p>
+				</div>
 			</div>
 		</div>
 
 		<div id="contact">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit aliquid architecto nobis, sequi atque impedit ratione veniam ipsam consectetur, est ab ad quibusdam voluptatem delectus accusamus mollitia consequatur aspernatur provident.
+			<h2>Contact</h2>
+			<div id="contact-link">
+				<a href="https://www.instagram.com/ratriaseza" target="_blank">
+					<div class="card">
+						<i class="fa-brands fa-instagram"></i>
+						<strong> Instagram
+						</strong>
+						<div class="card__body">
+							@ratriaseza
+						</div>
+						<span>Follow us</span>
+					</div>
+				</a>
+				<a href="https://www.linkedin.com/in/satria-reza-ramadhan-029096227/" target="_blank">
+					<div class="card">
+						<i class="fa-brands fa-linkedin"></i>
+						<strong> Instagram
+						</strong>
+						<div class="card__body">
+							Satria Reza Ramadhan
+						</div>
+						<span>Follow us</span>
+					</div>
+				</a>
+				<a href="https://github.com/RatriaSeza" target="_blank">
+					<div class="card">
+						<i class="fa-brands fa-github"></i>
+						<strong> Instagram
+						</strong>
+						<div class="card__body">
+							RatriaSeza
+						</div>
+						<span>Follow us</span>
+					</div>
+				</a>
+			</div>
 		</div>
 
 		<!-- Jquery -->
