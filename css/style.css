@@ -46,14 +46,17 @@ body {
 	top: 0;
 }
 
+.container {
+	margin: 30px 60px;
+}
+
 /* Header */
 nav {
+	z-index: 1;
 	padding: 10px 60px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	/* background-color: rgba(34, 40, 49, 0.6);
-    backdrop-filter: blur(2px); */
 	color: var(--navy);
 }
 
@@ -62,6 +65,10 @@ nav a {
 	font-weight: 700;
 	color: var(--grey);
 	filter: brightness(10%);
+}
+
+nav a:active {
+	color: var(--yellow);
 }
 
 li,
@@ -73,8 +80,20 @@ p {
 nav p {
 	font-size: 1.5em;
 	font-weight: 700;
+	color: var(--yellow);
+	margin-left: 80px;
 }
 
+nav p:before {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 8px;
+	background: var(--navy);
+	left: 60px;
+	top: 45%;
+	position: absolute;
+}
 ul {
 	display: flex;
 	gap: 66px;
@@ -82,15 +101,15 @@ ul {
 
 /* Home */
 #home {
-	margin: 30px 60px;
 	position: relative;
 	height: 100vh;
+	z-index: -1;
 }
 
 #home img {
 	z-index: -1;
-	margin-top: 70px;
-	width: 60%;
+	margin-top: 100px;
+	height: 400px;
 	position: relative;
 	float: left;
 }
@@ -98,27 +117,30 @@ ul {
 #home p {
 	color: var(--navy);
 	position: absolute;
+	z-index: -1;
 	font-size: 64px;
 	font-weight: 700;
 	line-height: 95%;
-	line-break: strict;
-	left: 45%;
-	top: 25%;
+	left: 530px;
+	top: 180px;
 }
 
 /* About */
 #about {
 	height: 100vh;
+	padding-top: 80px;
+	display: flex;
+	flex-direction: row;
 }
 
 #about img {
-	width: 10%;
+	height: 400px;
+}
+
+#about .text{
+	padding: 30px 60px;
 }
 
 .blur {
-	-webkit-filter: blur(8px);
-	-moz-filter: blur(8px);
-	-o-filter: blur(8px);
-	-ms-filter: blur(8px);
-	filter: blur(8px);
+	backdrop-filter: blur(8px);
 }
