@@ -52,6 +52,21 @@ body {
 	margin: 30px 60px;
 }
 
+.burger{
+	display: none;
+}
+
+.reveal{
+	transform: translateY(144px);
+	opacity: 0;
+	transition: 1s all ease;
+}
+
+.reveal.active{
+	transform: translateY(0);
+	opacity: 1;
+}
+
 .blur {
 	backdrop-filter: blur(8px);
 }
@@ -93,6 +108,7 @@ nav a {
 
 nav a:hover {
 	color: var(--yellow);
+	filter: drop-shadow(0px 0px 3px var(--grey));
 }
 
 li,
@@ -123,6 +139,11 @@ ul {
 	display: flex;
 	gap: 66px;
 }
+
+/* Responsive Nav */
+/* @media screen and (max-width: 600px) {
+	
+} */
 
 /* Home */
 #home {
@@ -192,17 +213,23 @@ ul {
 	font-size: 19px;
 }
 
-#education img {
+/* #education img {
 	max-height: 100vh;
 	visibility: hidden;
-}
+} */
 
 #parallax{
+	z-index: -1;
+	content: "";
+	max-height: 100vh;
+	padding-left: 70%;
+	box-sizing: border-box;
 	background-image: url('../img/informatika.jpeg');
 	background-attachment: fixed;
-	background-position: unset;
-	/* background-repeat: no-repeat; */
+	background-repeat: no-repeat;
 	background-size: contain;
+	background-position: center;
+	opacity: .75;
 }
 
 /* Experiecne & Organization */

@@ -1,3 +1,4 @@
+// Nav
 $(document).ready(function () {
     $(window).scroll(function () {
         if ($(window).scrollTop() > 100) {
@@ -37,3 +38,28 @@ $(document).ready(function () {
         }
     });
 });
+
+// Reveal animation
+function reveal(){
+    var reveals = document.querySelectorAll(".reveal");
+
+    reveals.forEach((reveal) =>{
+        var windowHeight = window.innerHeight;
+        var elemenTop = reveal.getBoundingClientRect().top;
+        var elementVisible = 100;
+
+        if (elemenTop < windowHeight - elementVisible){
+            reveal.classList.add("active");
+        }
+        else{
+            reveal.classList.remove("active");
+        }
+    });
+}
+
+window.addEventListener("scroll", reveal);
+
+ScrollReveal({ reset: true});
+ScrollReveal({ duration: 1000 });
+ScrollReveal().reveal('.scrollReveal');
+ScrollReveal().reveal('.scrollRevealContact', { delay: 500});
