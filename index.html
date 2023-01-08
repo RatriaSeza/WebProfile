@@ -4,22 +4,25 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Satria's Resume</title>
+		<title>Satria Reza Ramadhan</title>
 
 		<!--Title icon -->
 		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 
 		<!-- CSS Style -->
 		<link rel="stylesheet" href="css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.css" />
 
 		<!-- Icons -->
-		<script src="https://kit.fontawesome.com/15d5872470.js" crossorigin="anonymous"></script>
-		<script src="https://unpkg.com/scrollreveal"></script>
-		
+		<script
+			src="https://kit.fontawesome.com/15d5872470.js"
+			crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<div id="header" class="sticky">
-			<nav class="hero">
+			<nav class="hero" id="myTopNav">
 				<div>
 					<p id="logo">Portofolio</p>
 				</div>
@@ -27,52 +30,59 @@
 					<li><a href="#home" id="link-home">Home</a></li>
 					<li><a href="#about" id="link-about">About</a></li>
 					<li><a href="#contact" id="link-contact">Contact</a></li>
-					<li class="burger"><a href="" onclick="responsive()"><i class="fa fa-bars"></i></a></li>
+					<li class="burger">
+						<a href="javascript:void(0);" onclick="responsive()"
+							><i class="fa fa-bars"></i
+						></a>
+					</li>
 				</ul>
 			</nav>
 		</div>
 
 		<div id="home" class="container">
-			<img src="img/lazy.png" alt="lazy" />
-			<p class="scrollReveal">SATRIA REZA <br> RAMADHAN</p>
+			<img src="img/lazy.svg" alt="lazy" />
+			<div id="name">
+				<h6>Hi!, I am </h6>
+				<h2>Satria Reza <br> Ramadhan</h2>
+				<h6 style="font-weight: 700;"><span class="typed"></span></h6>
+			</div>
 		</div>
 
 		<div id="about" class="container">
-			<img src="img/person.png" alt="People" />
+			<img src="img/person.svg" alt="People" />
 			<div class="text reveal">
 				<h1>About <span class="green">Me</span></h1>
 				<p>
-					I am ambitious and creative person, and easily adapt to new environment.
-					I'd like to sport, music and lazy. I have interest in Web Development
-					and this is my First Website that Created with full of my heart. Thank
-					You :)
+					I am ambitious and creative person, and easily adapt to new
+					environment. I'd like to sport, music and lazy. I have interest in Web
+					Development and this is my First Website that Created with full of my
+					heart. Thank You :)
 				</p>
 			</div>
 		</div>
 
 		<div id="education">
-			<div style="padding-right: 100px;" class="reveal">
+			<div style="padding-right: 100px" class="reveal">
 				<h2>Education</h2>
-				<p>I'm Informatics Student  <br>at Diponegoro University</p>
+				<p>I'm Informatics Student <br />at Diponegoro University</p>
 			</div>
-			<div id="parallax">
-			</div>
+			<div id="parallax"></div>
 		</div>
 
 		<div id="exporg">
 			<h2>Experience <span class="yellow">& Organization</span></h2>
 			<div class="right reveal">
-				<hr>
+				<hr />
 				<div id="imj">
 					<h4>2022 - <span class="yellow">IMJ Semarang</span></h4>
 					<h5>Vice Leader</h5>
 					<p>
-						I met people that came from my home town Jambi. We help each other and
-						make lot of fun.
+						I met people that came from my home town Jambi. We help each other
+						and make lot of fun.
 					</p>
 				</div>
-				<br><br>
-				<hr>
+				<br /><br />
+				<hr />
 				<div id="hmif">
 					<h4>2022 - <span class="yellow">HMIF Diponegoro University</span></h4>
 					<h5>Staff</h5>
@@ -87,36 +97,36 @@
 		<div id="contact">
 			<h2>Contact</h2>
 			<div id="contact-link">
-				<a href="https://www.instagram.com/ratriaseza" target="_blank" class="scrollRevealContact">
+				<a
+					href="https://www.instagram.com/ratriaseza"
+					target="_blank"
+					class="scrollRevealContact">
 					<div class="card">
 						<i class="fa-brands fa-instagram"></i>
-						<strong> Instagram
-						</strong>
-						<div class="card__body">
-							@ratriaseza
-						</div>
+						<strong> Instagram </strong>
+						<div class="card__body">@ratriaseza</div>
 						<span>Follow me</span>
 					</div>
 				</a>
-				<a href="https://www.linkedin.com/in/satria-reza-ramadhan-029096227/" target="_blank" class="scrollRevealContact">
+				<a
+					href="https://www.linkedin.com/in/satria-reza-ramadhan-029096227/"
+					target="_blank"
+					class="scrollRevealContact">
 					<div class="card">
 						<i class="fa-brands fa-linkedin"></i>
-						<strong> Instagram
-						</strong>
-						<div class="card__body">
-							Satria Reza Ramadhan
-						</div>
+						<strong> Instagram </strong>
+						<div class="card__body">Satria Reza Ramadhan</div>
 						<span>Follow me</span>
 					</div>
 				</a>
-				<a href="https://github.com/RatriaSeza" target="_blank" class="scrollRevealContact">
+				<a
+					href="https://github.com/RatriaSeza"
+					target="_blank"
+					class="scrollRevealContact">
 					<div class="card">
 						<i class="fa-brands fa-github"></i>
-						<strong> Instagram
-						</strong>
-						<div class="card__body">
-							RatriaSeza
-						</div>
+						<strong> Instagram </strong>
+						<div class="card__body">RatriaSeza</div>
 						<span>Follow me</span>
 					</div>
 				</a>
@@ -127,7 +137,25 @@
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 		<script src="script/script.js"></script>
-		<script src="script/parallax.js"></script>
-		<!-- Script-->
+		<script src="script/locomotive-scroll.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+		<script src="script/typed.js"></script>
+
+		<script>
+			// (function () {
+			// 	const scroll = new LocomotiveScroll({
+			// 		el: document.querySelector('[data-scroll-container]'),
+			// 		smooth: true
+			// 	});
+			// })();
+
+			var typed = new Typed(".typed", {
+				strings: ["Student", "Web Developer"],
+				typeSpeed: 60,
+				backSpeed: 60,
+				loop: true
+			});
+			console.log("hello");
+		</script>
 	</body>
 </html>

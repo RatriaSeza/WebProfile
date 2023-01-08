@@ -109,6 +109,7 @@ nav a {
 nav a:hover {
 	color: var(--yellow);
 	filter: drop-shadow(0px 0px 3px var(--grey));
+	transition: .2s;
 }
 
 li,
@@ -141,35 +142,69 @@ ul {
 }
 
 /* Responsive Nav */
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
+	ul li:not(:last-child){display: none;}
+
+	.burger{
+		display: initial;
+	}
+
+	/* Active Burger */
+	.responsive {position: relative;}
 	
-} */
+	ul {
+		display: flex;
+		flex-direction: row;
+		gap: 66px;
+	}
+
+
+}
 
 /* Home */
 #home {
-	position: relative;
 	height: 100vh;
 	z-index: -1;
 }
 
 #home img {
 	z-index: -1;
-	margin-top: 100px;
-	max-height: 400px;
-	width: auto;
-	position: relative;
-	float: left;
+	margin-top: 0px;
+	top: 0;
+	transform: translateY(-10%);
+	width: 70%;
+	height: auto;
+	position: absolute;
 }
 
 #home p {
-	color: var(--navy);
 	position: absolute;
 	z-index: -1;
-	font-size: 4em;
 	font-weight: 700;
 	line-height: 95%;
 	left: 530px;
+	font-size: 4em;
 	top: 180px;
+}
+
+#home #name{
+	color: var(--navy);
+	position: absolute;
+	top: 50%;
+	left: 8%;
+	transform: translateY(-50%);
+}
+
+#home #name h6{
+	font-size: 2em;
+	font-weight: 600;
+}
+
+#home #name h2{
+	font-size: 4em;
+	line-height: 80%;
+	font-weight: 700;
+	color: var(--yellow);
 }
 
 /* About */

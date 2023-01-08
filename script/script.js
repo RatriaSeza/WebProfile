@@ -1,4 +1,13 @@
 // Nav
+function responsive(){
+    var x = document.getElementById("myTopNav");
+    if (x.className === "hero"){
+        x.classList.add("responsive")
+    }else{
+        x.className = "hero";
+    }
+}
+
 $(document).ready(function () {
     $(window).scroll(function () {
         if ($(window).scrollTop() > 100) {
@@ -58,8 +67,3 @@ function reveal(){
 }
 
 window.addEventListener("scroll", reveal);
-
-ScrollReveal({ reset: true});
-ScrollReveal({ duration: 1000 });
-ScrollReveal().reveal('.scrollReveal');
-ScrollReveal().reveal('.scrollRevealContact', { delay: 500});
