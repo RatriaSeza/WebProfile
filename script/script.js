@@ -28,22 +28,22 @@ $(document).ready(function () {
             $("#link-home").removeClass("yellow");
         }
 
-        if ($(window).scrollTop() > 700 && $(window).scrollTop() < 2900 ) {
+        if ($(window).scrollTop() > 700 && $(window).scrollTop() < 2800 ) {
             $("#link-about").addClass("yellow");
         } else {
             $("#link-about").removeClass("yellow");
         }
-
-        if ($(window).scrollTop() > 2900) {
+        
+        if ($(window).scrollTop() > 2800) {
             $("#link-home").addClass("grey");
             $("#link-about").addClass("grey");
             $("#link-contact").addClass("yellow");
-            $("nav p:before").addClass("grey")
+            $("p").addClass("green");
         } else {
             $("#link-home").removeClass("grey");
             $("#link-about").removeClass("grey");
             $("#link-contact").removeClass("yellow");
-            $("nav p:before").removeClass("grey")
+            $("p").removeClass("green");
         }
     });
 });

@@ -41,7 +41,7 @@ body {
 	background-color: #555;
 }
 
-/* Class */
+/* Classes */
 .sticky {
 	position: sticky;
 	position: -webkit-sticky;
@@ -56,6 +56,10 @@ body {
 	display: none;
 }
 
+.hero {
+	z-index: 100;
+}
+
 .reveal{
 	transform: translateY(144px);
 	opacity: 0;
@@ -64,6 +68,15 @@ body {
 
 .reveal.active{
 	transform: translateY(0);
+	opacity: 1;
+}
+
+.opa0{
+	opacity: 0;
+	transition: 1s all ease;
+}
+
+.opa1{
 	opacity: 1;
 }
 
@@ -91,9 +104,13 @@ body {
 	color: var(--grey);
 }
 
+.back-yellow{
+	background: var(--yellow);
+}
+
 /* Header */
 nav {
-	z-index: 1;
+	z-index: 999;
 	padding: 10px 60px;
 	display: flex;
 	align-items: center;
@@ -108,7 +125,6 @@ nav a {
 
 nav a:hover {
 	color: var(--yellow);
-	filter: drop-shadow(0px 0px 3px var(--grey));
 	transition: .2s;
 }
 
@@ -157,8 +173,6 @@ ul {
 		flex-direction: row;
 		gap: 66px;
 	}
-
-
 }
 
 /* Home */
@@ -171,6 +185,7 @@ ul {
 	z-index: -1;
 	margin-top: 0px;
 	top: 0;
+	left: 20%;
 	transform: translateY(-10%);
 	width: 70%;
 	height: auto;
@@ -207,10 +222,13 @@ ul {
 	color: var(--yellow);
 }
 
+#home #name .typed{
+	color: var(--green);
+}
+
 /* About */
 #about {
 	height: 100vh;
-	padding-top: 130px;
 	padding-left: 100px;
 	display: flex;
 	flex-direction: row;
@@ -231,6 +249,7 @@ ul {
 
 /* Education */
 #education {
+	z-index: -1;
 	height: 100vh;
 	margin-left: 60px;
 	margin-right: 60px;
@@ -269,6 +288,7 @@ ul {
 
 /* Experiecne & Organization */
 #exporg {
+	z-index: -1;
 	height: 100vh;
 	padding: 200px 60px 0 60px;
 	display: flex;
@@ -319,7 +339,7 @@ p {
 	color: var(--grey);
 	font-size: 50px;
 	/* padding-bottom: 50px; */
-	padding-top: 80px;
+	padding-top: 150px;
 }
 
 #contact a {
@@ -328,7 +348,7 @@ p {
 }
 
 #contact-link {
-	padding-top: 100px;
+	padding-top: 50px;
 	display: flex;
 }
 
