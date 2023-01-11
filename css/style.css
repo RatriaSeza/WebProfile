@@ -20,7 +20,7 @@ body {
 
 /* Other */
 ::selection {
-	background-color: var(--navy);
+	background-color: black;
 	color: var(--grey);
 }
 
@@ -52,7 +52,7 @@ body {
 	margin: 30px 60px;
 }
 
-.burger{
+.burger {
 	display: none;
 }
 
@@ -60,23 +60,23 @@ body {
 	z-index: 100;
 }
 
-.reveal{
+.reveal {
 	transform: translateY(144px);
 	opacity: 0;
 	transition: 1s all ease;
 }
 
-.reveal.active{
+.reveal.active {
 	transform: translateY(0);
 	opacity: 1;
 }
 
-.opa0{
+.opa0 {
 	opacity: 0;
 	transition: 1s all ease;
 }
 
-.opa1{
+.opa1 {
 	opacity: 1;
 }
 
@@ -104,7 +104,7 @@ body {
 	color: var(--grey);
 }
 
-.back-yellow{
+.back-yellow {
 	background: var(--yellow);
 }
 
@@ -125,7 +125,7 @@ nav a {
 
 nav a:hover {
 	color: var(--yellow);
-	transition: .2s;
+	transition: 0.2s;
 }
 
 li,
@@ -138,18 +138,6 @@ nav p {
 	font-size: 1.5em;
 	font-weight: 700;
 	color: var(--yellow);
-	margin-left: 80px;
-}
-
-nav p:before {
-	content: "";
-	display: block;
-	width: 60px;
-	height: 8px;
-	background: var(--navy);
-	left: 60px;
-	top: 45%;
-	position: absolute;
 }
 
 ul {
@@ -157,17 +145,33 @@ ul {
 	gap: 66px;
 }
 
+#logo{
+	display: flex;
+	align-items: center;
+}
+
+#logo i{
+	color: var(--green);
+	text-align: center;
+	font-size: 30px;
+	margin-right: 40px;
+}
+
 /* Responsive Nav */
 @media screen and (max-width: 767px) {
-	ul li:not(:last-child){display: none;}
+	ul li:not(:last-child) {
+		display: none;
+	}
 
-	.burger{
+	.burger {
 		display: initial;
 	}
 
 	/* Active Burger */
-	.responsive {position: relative;}
-	
+	.responsive {
+		position: relative;
+	}
+
 	ul {
 		display: flex;
 		flex-direction: row;
@@ -202,7 +206,7 @@ ul {
 	top: 180px;
 }
 
-#home #name{
+#home #name {
 	color: var(--navy);
 	position: absolute;
 	top: 50%;
@@ -210,19 +214,19 @@ ul {
 	transform: translateY(-50%);
 }
 
-#home #name h6{
+#home #name h6 {
 	font-size: 2em;
 	font-weight: 600;
 }
 
-#home #name h2{
+#home #name h2 {
 	font-size: 4em;
 	line-height: 80%;
 	font-weight: 700;
 	color: var(--yellow);
 }
 
-#home #name .typed{
+#home #name .typed {
 	color: var(--green);
 }
 
@@ -272,18 +276,18 @@ ul {
 	visibility: hidden;
 } */
 
-#parallax{
+#parallax {
 	z-index: -1;
 	content: "";
 	max-height: 100vh;
 	padding-left: 70%;
 	box-sizing: border-box;
-	background-image: url('../img/informatika.jpeg');
+	background-image: url("../img/informatika.jpeg");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
-	opacity: .75;
+	opacity: 0.75;
 }
 
 /* Experiecne & Organization */
@@ -352,7 +356,7 @@ p {
 	display: flex;
 }
 
-#contact i{
+#contact i {
 	font-size: 50px;
 }
 
@@ -420,3 +424,75 @@ p {
 .card:hover > strong {
 	opacity: 0;
 }
+
+/* Modal Under Construction */
+.modal-wrapper {
+	z-index: 999999;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	backdrop-filter: blur(5px);
+	transition: all 0.25s ease-in-out;
+}
+
+.modal-wrapper.close{
+	opacity: 0;
+	visibility: hidden;
+}
+
+.modal {
+	width: 600px;
+	height: 400px;
+	border-radius: 20px;
+	display: flex;
+	margin: 50% 0 0 -300px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	background: var(--navy);
+	transition: all 0.5s ease-in-out;
+	justify-content: center;
+	align-items: center;
+	margin-top: -200px;
+	font-weight: 600;
+}
+
+.modal p{
+	color: var(--grey);
+}
+
+.modal-wrapper.close .modal{
+	margin-top: 200px;
+	opacity: 0;
+}
+
+.btn-close {
+	cursor: pointer;
+	margin-top: 40px;
+	background-color: var(--green);
+	border: none;
+	border-radius: 5px;
+	width: 200px;
+	padding: 14px;
+	font-size: 16px;
+	font-weight: 600;
+	color: white;
+	box-shadow: 0px 6px 18px -5px var(--green);
+}
+
+.content {
+	padding: 10%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.content img {
+	width: 82px;
+	padding-bottom: 20px;
+}
+
+/* Undercounstruction until here */

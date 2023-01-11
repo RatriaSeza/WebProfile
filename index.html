@@ -21,10 +21,26 @@
 			crossorigin="anonymous"></script>
 	</head>
 	<body>
+		<!-- Modal -->
+		<div class="modal-wrapper">
+			<div class="modal">
+				<div class="content">
+					<img
+						src="https://cdn-icons-png.flaticon.com/512/1012/1012232.png"
+						alt="Construction-img" />
+					<p>
+						This website is currently under construction.
+					</p>
+					<button class="btn-close trigger">That's fine!</button>
+				</div>
+			</div>
+		</div>
+		<!-- UNtill HERE -->
+
 		<div id="header" class="sticky">
 			<nav class="hero" id="myTopNav">
 				<div>
-					<p id="logo">Portofolio</p>
+					<p id="logo"><i class="fa-solid fa-minus"></i>Portofolio</p>
 				</div>
 				<ul>
 					<li><a href="#home" id="link-home">Home</a></li>
@@ -42,9 +58,12 @@
 		<div id="home" class="container">
 			<img src="img/lazy.svg" alt="lazy" />
 			<div id="name">
-				<h6>Hi!, I am </h6>
-				<h2>Satria Reza <br> Ramadhan</h2>
-				<h6 style="font-weight: 700;"><span class="typed"></span></h6>
+				<h6>Hi!, I am</h6>
+				<h2>
+					Satria Reza <br />
+					Ramadhan
+				</h2>
+				<h6 style="font-weight: 700"><span class="typed"></span></h6>
 			</div>
 		</div>
 
@@ -144,7 +163,7 @@
 				strings: ["Student", "Web Developer"],
 				typeSpeed: 60,
 				backSpeed: 60,
-				loop: true
+				loop: true,
 			});
 		</script>
 	</body>
