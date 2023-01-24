@@ -16,25 +16,25 @@ $(document).ready(function () {
 			$(".hero").removeClass("blur");
 		}
 
-		if ($(window).scrollTop() > 700) {
+		if ($(window).scrollTop() > 600) {
 			$("#logo").html('<i class="fa-solid fa-minus"></i>Satria Reza Ramadhan');
 		} else {
 			$("#logo").html('<i class="fa-solid fa-minus"></i>Portofolio');
 		}
 
-		if ($(window).scrollTop() >= 0 && $(window).scrollTop() < 699) {
+		if ($(window).scrollTop() >= 0 && $(window).scrollTop() < 599) {
 			$("#link-home").addClass("yellow");
 		} else {
 			$("#link-home").removeClass("yellow");
 		}
 
-		if ($(window).scrollTop() > 700 && $(window).scrollTop() < 2800) {
+		if ($(window).scrollTop() > 600 && $(window).scrollTop() < 2700) {
 			$("#link-about").addClass("yellow");
 		} else {
 			$("#link-about").removeClass("yellow");
 		}
 
-		if ($(window).scrollTop() > 2800) {
+		if ($(window).scrollTop() > 2700) {
 			$("#link-home").addClass("grey");
 			$("#link-about").addClass("grey");
 			$("#link-contact").addClass("yellow");
