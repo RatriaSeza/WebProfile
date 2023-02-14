@@ -1,21 +1,5 @@
-// Nav
-function responsive() {
-	var x = document.getElementById("myTopNav");
-	if (x.className === "hero") {
-		x.classList.add("responsive");
-	} else {
-		x.className = "hero";
-	}
-}
-
 $(document).ready(function () {
 	$(window).scroll(function () {
-		if ($(window).scrollTop() > 100) {
-			$(".hero").addClass("blur");
-		} else {
-			$(".hero").removeClass("blur");
-		}
-
 		if ($(window).scrollTop() > 600) {
 			$("#logo").html('<i class="fa-solid fa-minus"></i>Satria Reza Ramadhan');
 		} else {
@@ -39,11 +23,13 @@ $(document).ready(function () {
 			$("#link-about").addClass("grey");
 			$("#link-contact").addClass("yellow");
 			$("#logo").addClass("green");
+			$("nav").hide();
 		} else {
 			$("#link-home").removeClass("grey");
 			$("#link-about").removeClass("grey");
 			$("#link-contact").removeClass("yellow");
 			$("#logo").removeClass("green");
+			$("nav").show();
 		}
 	});
 });
